@@ -1,4 +1,4 @@
-function RouteConfig($urlRouterProvider, $stateProvider) {
+function RouteConfig($urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
 }
 

@@ -1,9 +1,9 @@
-import template from './home.html';
+import homeTemplate from './home.html';
 import HomeController from './home.controller';
 
 const HomeComponent = {
   $NAME: 'homeComponent',
-  template: template,
+  template: homeTemplate,
   controller: HomeController,
   controllerAs: 'home'
 };
