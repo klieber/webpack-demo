@@ -1,11 +1,11 @@
-import _ from 'lodash';
+import angular from 'angular';
 
-function component () {
-  var element = document.createElement('div');
+import UiRouter from 'angular-ui-router';
 
-  /* lodash is required for the next line to work */
-  element.innerHTML = _.join(['Hello', 'webpack'], ' '); 
-  return element;
-}
+import HomeModule from './home/home.module';
+import RouteConfig from './home/home.route';
 
-document.body.appendChild(component());
+angular.module('app', [
+  UiRouter,
+  HomeModule
+]).config(RouteConfig);
