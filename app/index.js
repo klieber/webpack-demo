@@ -1,11 +1,13 @@
 import angular from 'angular';
 
-import UiRouter from 'angular-ui-router';
+import UiRouter from '@uirouter/angularjs';
 
 import HomeModule from './home/home.module';
-import RouteConfig from './home/home.route';
+import AboutModule from './about/about.module';
+import RouteConfig from './config/route.config';
 
 angular.module('app', [
   UiRouter,
-  HomeModule
+  HomeModule,
+  AboutModule
 ]).config(RouteConfig);

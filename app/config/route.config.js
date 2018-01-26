@@ -1,5 +1,5 @@
-function RouteConfig($urlRouterProvider, $stateProvider) {
-  $urlRouterProvider.otherwise('/');
+function RouteConfig($urlRouterProvider) {
+  $urlRouterProvider.otherwise('/home');
 }
 
 export default RouteConfig;
