@@ -1,4 +1,13 @@
 {
-  presets: ['es2015'],
-  compact: false
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": [
+          "last 2 versions",
+          "ie >= 11"
+        ]
+      }
+    }]
+  ],
+  "compact": false
 }
